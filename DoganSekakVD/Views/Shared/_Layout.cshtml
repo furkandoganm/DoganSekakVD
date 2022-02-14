@@ -1,0 +1,106 @@
+﻿<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="utf-8" />
+    @*<meta name="viewport" content="width=device-width, initial-scale=1.0" />*@
+    <title>@ViewData["Title"] - Doğan Şekak</title>
+    @*<link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />*@
+    <link href="~/css/main.css" rel="stylesheet" />
+    @*<link rel="stylesheet" href="~/css/site.css" />*@
+    <link href="~/lib/font-awesome/css/all.min.css" rel="stylesheet" />
+    @*buraya font linki yazılacak*@
+    <script src="https://kit.fontawesome.com/9370c43042.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="social">
+        <div id="social-part1">
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            &nbsp;
+            <a href="#"><i class="fab fa-facebook"></i></a>
+            &nbsp;
+            <a href="#"><i class="fab fa-whatsapp"></i></a>
+        </div>
+        <div id="social-part2">
+            <span>Kemaliye'ye Hoşgeldiniz...</span>
+        </div>
+        <div id="social-part3">
+            <div>
+                <a asp-controller="" asp-action="">Üye Girişi</a> |
+                <a asp-controller="" asp-action="">Üye Ol</a>
+            </div>
+        </div>
+    </div>
+    <header id="header">
+        <img id="mountain" src="~/files/ales-krivec-rzzeLJW8dWc-unsplash.jpg" alt="Alternate Text" />
+        <div class="header">
+            <div id="space1"></div>
+            <div id="first-impression">
+                <div id="search">
+                    <div id="search-logo">
+                        <img id="serach_img" src="~/files/SearchArrow/arrow-return-left.png" alt="" />
+                    </div>
+                    <div id="search-space">
+                        <div class="search-space-div">
+                            <label id="search-label" for="search-input">Bulmak İstediğiniz Ürünü Arayın</label>
+                        </div>
+                        <div class="search-space-div">
+                            <input type="text" id="search-input" name="search-input" value="" />
+                        </div>
+                    </div>
+                </div>
+                <div id="logo">
+                    <img id="logo_img" src="~/files/CompanyLogo/1375222-920.gif" alt="" />
+                </div>
+                <div id="cart">
+                    <a asp-controller="" asp-action=""><img id="cart_img" src="~/files/CartImage/1592503218088354-Bangs-Vintage-Classic-Check-Beige-Birkin-Basket-with-shadow.png" alt="" /></a>
+                </div>
+            </div>
+            <div id="menu">
+                <ul>
+                    <li><a asp-controller="" asp-action="">ANASAYFA</a></li>
+                    <li><a asp-controller="" asp-action="">ÜRÜNLER</a></li>
+                    <li><a asp-controller="" asp-action="">NEDEN BİZ?</a></li>
+                    <li><a asp-controller="" asp-action="">KURUMSAL</a></li>
+                    <li><a asp-controller="" asp-action="">İLETİŞİM</a></li>
+                </ul>
+            </div>
+        </div>
+        @*<nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
+                <div class="container">
+                    <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index">DoganSekakVD</a>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".navbar-collapse" aria-controls="navbarSupportedContent"
+                            aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between">
+                        <ul class="navbar-nav flex-grow-1">
+                            <li class="nav-item">
+                                <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Index">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>*@
+    </header>
+    
+    <div class="container">
+        <main role="main" class="pb-3">
+            @RenderBody()
+        </main>
+    </div>
+
+    <footer class="border-top footer text-muted">
+        <div class="container">
+            &copy; 2021 - DoganSekakVD - <a asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
+        </div>
+    </footer>
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+    @await RenderSectionAsync("Scripts", required: false)
+    <script src="~/lib/font-awesome/js/all.min.js"></script>
+</body>
+</html>
