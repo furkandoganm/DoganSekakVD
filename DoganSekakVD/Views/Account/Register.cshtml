@@ -1,0 +1,83 @@
+﻿@model RegisterModel
+
+@{
+    ViewBag.Title = "Üye Olun";
+}
+
+<h1 class="base_h1">@ViewBag.Title</h1>
+<hr />
+<div class="recordinput">
+    <form class="recordinput_form" asp-action="Register" asp-controller="Account" method="post">
+        <div asp-validation-summary="All" class="text-danger"></div>
+        @Html.AntiForgeryToken()
+        <div class="form_necessary">
+            <div class="recordinput_formgroup">
+                <label asp-for="Name"></label>
+                <div class="formgroup_input"><input asp-for="Name" class="ininput" /></div>
+                <span asp-validation-for="Name" class="text-danger"></span>
+            </div>
+            <div class="recordinput_formgroup">
+                <label asp-for="Surname"></label>
+                <div class="formgroup_input"><input asp-for="Surname" class="ininput" /></div>
+                <span asp-validation-for="Surname" class="text-danger"></span>
+            </div>
+            <div class="recordinput_formgroup">
+                <label asp-for="EMail"></label>
+                <div class="formgroup_input"><input asp-for="EMail" class="ininput" /></div>
+                <span asp-validation-for="EMail" class="text-danger"></span>
+            </div>
+            <div class="recordinput_formgroup">
+                <label asp-for="Password"></label>
+                <div class="formgroup_input"><input asp-for="Password" class="ininput" /></div>
+                <span asp-validation-for="Password" class="text-danger"></span>
+            </div>
+            <div class="recordinput_formgroup">
+                <label asp-for="ConfirmPassword"></label>
+                <div class="formgroup_input"><input asp-for="ConfirmPassword" class="ininput" /></div>
+                <span asp-validation-for="ConfirmPassword" class="text-danger"></span>
+            </div>
+            <div class="recordinput_formgroup">
+                <label asp-for="PhoneNumber"></label>
+                <div class="formgroup_input"><input asp-for="PhoneNumber" class="ininput" /></div>
+                <span asp-validation-for="PhoneNumber" class="text-danger"></span>
+            </div>
+        </div>
+        <div class="form_unnecessary">
+            <div class="recordinput_formgroup" id="address">
+                <label asp-for="Address"></label>
+                <div class="formgroup_input"><input asp-for="Address" class="ininput" /></div>
+                <span asp-validation-for="Address" class="text-danger"></span>
+            </div>
+            <div class="recordinput_formgroup">
+                <label asp-for="CityId"></label>
+                <div class="formgroup_input">
+                    <select asp-for="CityId" asp-items="ViewBag.City" class="ininput">
+                        <option>Seçiniz</option>
+                    </select>
+                </div>
+                <span asp-validation-for="CityId" class="text-danger"></span>
+            </div>
+            <div class="recordinput_formgroup">
+                <label asp-for="DistrictId"></label>
+                <div class="formgroup_input">
+                    <select asp-for="DistrictId" asp-items="ViewBag.District" class="ininput">
+                        <option>Seçiniz</option>
+                    </select>
+                </div>
+                <span asp-validation-for="DistrictId" class="text-danger"></span>
+            </div>
+            <div class="recordinput_formgroup">
+                <label asp-for="PostNumberId"></label>
+                <div class="formgroup_input">
+                    <select asp-for="PostNumberId" asp-items="ViewBag.PostNumber" class="ininput">
+                        <option>Seçiniz</option>
+                    </select>
+                </div>
+                <span asp-validation-for="PostNumberId" class="text-danger"></span>
+            </div>
+        </div>
+        <div id="form_button">
+            <input type="submit" value="Register" class="btn btn-primary" />
+        </div>
+    </form>
+</div>

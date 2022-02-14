@@ -1,0 +1,27 @@
+﻿@model LoginModel 
+
+@{
+    ViewBag.Title = "Giriş Yapın";
+}
+
+<h1 class="base_h1">@ViewBag.Title</h1>
+<hr />
+<div class="recordinput">
+    <form class="recordinput_form" asp-action="Login" asp-controller="Account" method="post">
+        <div asp-validation-summary="All" class="text-danger"></div>
+        @Html.AntiForgeryToken()
+        <div class="recordinput_formgroup">
+            <label asp-for="EMail"></label>
+            <div class="formgroup_input"><input asp-for="EMail" class="ininput" /></div>
+            <span asp-validation-for="EMail" class="text-danger"></span>
+        </div>
+        <div class="recordinput_formgroup">
+            <label asp-for="Password"></label>
+            <div class="formgroup_input"><input asp-for="Password" class="ininput" /></div>
+            <span asp-validation-for="Password" class="text-danger"></span>
+        </div>
+        <div id="form_button">
+            <input type="submit" value="Login" class="btn btn-primary" />
+        </div>
+    </form>
+</div>
