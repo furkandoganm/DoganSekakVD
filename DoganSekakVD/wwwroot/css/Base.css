@@ -2,11 +2,16 @@
 body {
 }
 
+<<<<<<< HEAD
 * {
+=======
+*{
+>>>>>>> 5f1563d2e59cb457ac1d671bdb7cab2f1e00d5eb
     padding: 0;
     margin: 0;
 }
 
+<<<<<<< HEAD
 .base_h1 {
     margin: 40px 0;
     display: inline-block;
@@ -222,3 +227,8 @@ table {
         margin: 0 0 5% 0;
         padding: 1.4% 0 0 0;
     }
+=======
+table{
+    width: 100%;
+}
+>>>>>>> 5f1563d2e59cb457ac1d671bdb7cab2f1e00d5eb

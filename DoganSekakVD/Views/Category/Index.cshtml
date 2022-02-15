@@ -1,14 +1,22 @@
 ﻿@model IEnumerable<CategoryModel>
 
 @{
+<<<<<<< HEAD
     ViewBag.Title = "Ürün Kategorileri";
+=======
+    ViewBag.Title = "Categories";
+>>>>>>> 5f1563d2e59cb457ac1d671bdb7cab2f1e00d5eb
 
 }
 
 <h1>@ViewBag.Title</h1>
 
 <p>
+<<<<<<< HEAD
     <a asp-action="Create" class="create_buttons"><i style="color: yellow;" class="fas fa-plus-square"></i> Create New</a>
+=======
+    <a asp-action="Create" class="btn btn-primary"><i style="color: yellow;" class="fas fa-plus-square"></i> Create New</a>
+>>>>>>> 5f1563d2e59cb457ac1d671bdb7cab2f1e00d5eb
 </p>
 <table id="categories" class="ui celled table">
     <thead>
@@ -40,6 +48,7 @@
     </tbody>
 </table>
 @section Scripts{
+<<<<<<< HEAD
     @*<link href="~/lib/AlertifyJS/css/alertify.min.css" rel="stylesheet" />
     <script src="~/lib/AlertifyJS/alertify.min.js"></script>
     <link href="~/lib/datatables/css/jquery.dataTables.min.css" rel="stylesheet" />
@@ -51,6 +60,13 @@
     <link href="~/lib/datatables/css/jquery.dataTables.css" rel="stylesheet" />
     <script src="~/lib/AlertifyJS/alertify.min.js"></script>
     <link href="~/lib/AlertifyJS/css/alertify.min.css" rel="stylesheet" />
+=======
+    <link href="~/lib/AlertifyJS/css/alertify.min.css" rel="stylesheet" />
+    <script src="~/lib/AlertifyJS/alertify.min.js"></script>
+    <link href="~/lib/datatables/css/jquery.dataTables.min.css" rel="stylesheet" />
+    <script src="~/lib/datatables/js/jquery.dataTables.min.js"></script>
+    <script src="~/js/datatables.js"></script>
+>>>>>>> 5f1563d2e59cb457ac1d671bdb7cab2f1e00d5eb
     <script>
         $(document).ready(function () {
             BindDataTable("categories");

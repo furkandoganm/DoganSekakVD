@@ -61,10 +61,14 @@ namespace Business.Services
                     Password = model.Password,
                     PhoneNumber = model.PhoneNumber,
                     RoleId = (int)Roles.User,
+<<<<<<< HEAD
                     IsActive = true,
                     CityId = (int)UnknownRelation.CityId,
                     DistrictId = (int)UnknownRelation.DistrictId,
                     PostNumberId = (int)UnknownRelation.PostNumberId
+=======
+                    IsActive = true
+>>>>>>> 5f1563d2e59cb457ac1d671bdb7cab2f1e00d5eb
                 };
                 _userRepository.Add(entity);
                 var loginModel = new LoginModel()

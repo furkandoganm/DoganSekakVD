@@ -205,8 +205,12 @@ h2 {
                     }
 
                     #header .header #first-impression #search #search-space .search-space-div #search-input {
+<<<<<<< HEAD
                         border: 2px solid #DAD992;
                         border-radius: 5px;
+=======
+                        border: 3px solid #DAD992;
+>>>>>>> 5f1563d2e59cb457ac1d671bdb7cab2f1e00d5eb
                         width: 80%;
                         padding: 5px 5px;
                         margin-left: 3px;
@@ -427,12 +431,20 @@ h2 {
     display: flex;
 }
 
+<<<<<<< HEAD
 /*    #firstinfo .vertic-line {
+=======
+    #firstinfo .vertic-line {
+>>>>>>> 5f1563d2e59cb457ac1d671bdb7cab2f1e00d5eb
         font-size: 90px;
         color: #444941;
         margin: 0;
         padding: 0;
+<<<<<<< HEAD
     }*/
+=======
+    }
+>>>>>>> 5f1563d2e59cb457ac1d671bdb7cab2f1e00d5eb
 
     #firstinfo .info {
         float: left;

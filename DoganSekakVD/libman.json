@@ -13,6 +13,7 @@
     {
       "library": "font-awesome@5.15.4",
       "destination": "wwwroot/lib/font-awesome/"
+<<<<<<< HEAD
     },
     {
       "library": "datatables@1.10.21",
@@ -25,6 +26,8 @@
     {
       "library": "popper.js@2.11.2",
       "destination": "wwwroot/lib/popper.js/"
+=======
+>>>>>>> 5f1563d2e59cb457ac1d671bdb7cab2f1e00d5eb
     }
   ]
 }

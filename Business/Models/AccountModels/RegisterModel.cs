@@ -58,11 +58,16 @@ namespace Business.Models.AccountModels
         public string Address { get; set; }
         [DisplayName("Rol")]
         public RoleModel Role { get; set; }
+<<<<<<< HEAD
         [DisplayName("Şehir İsmi")]
         public int CityId { get; set; }
         [DisplayName("İlçe İsmi")]
         public int DistrictId { get; set; }
         [DisplayName("Posta Kodu")]
+=======
+        public int CityId { get; set; }
+        public int DistrictId { get; set; }
+>>>>>>> 5f1563d2e59cb457ac1d671bdb7cab2f1e00d5eb
         public int PostNumberId { get; set; }
     }
 }

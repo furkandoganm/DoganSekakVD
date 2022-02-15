@@ -28,6 +28,10 @@
   </ItemGroup>
 
   <ItemGroup>
+<<<<<<< HEAD
+=======
+    <Folder Include="Views\Account\" />
+>>>>>>> 5f1563d2e59cb457ac1d671bdb7cab2f1e00d5eb
     <Folder Include="wwwroot\files\slider_images\" />
   </ItemGroup>
 

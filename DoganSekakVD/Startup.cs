@@ -70,7 +70,10 @@ namespace DoganSekakVD
             services.AddScoped<IRoleService, RoleService>();
             services.AddScoped<IUserService, UserService>();
             services.AddScoped<IUserProductService, UserProductService>();
+<<<<<<< HEAD
             services.AddScoped<IAccountService, AccountService>();
+=======
+>>>>>>> 5f1563d2e59cb457ac1d671bdb7cab2f1e00d5eb
 
             AppSettingsUtilBase appSetingsUtil = new AppSettingsUtil(Configuration);
             appSetingsUtil.BindAppSettings<AppSettings>();

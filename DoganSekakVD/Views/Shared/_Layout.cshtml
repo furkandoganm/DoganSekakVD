@@ -6,8 +6,11 @@
     <title>@ViewData["Title"] - Doğan Şekak</title>
     @*<link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />*@
     <link href="~/css/main.css" rel="stylesheet" />
+<<<<<<< HEAD
     <link href="~/css/Base.css" rel="stylesheet" />
     @*<link href="~/lib/bootstrap/css/bootstrap.min.css" rel="stylesheet" />*@
+=======
+>>>>>>> 5f1563d2e59cb457ac1d671bdb7cab2f1e00d5eb
     @*<link rel="stylesheet" href="~/css/site.css" />*@
     <link href="~/lib/font-awesome/css/all.min.css" rel="stylesheet" />
     @*buraya font linki yazılacak*@
@@ -27,6 +30,7 @@
         </div>
         <div id="social-part3">
             <div>
+<<<<<<< HEAD
                 @if (!User.Identity.IsAuthenticated)
                 {
                     <a asp-controller="Account" asp-action="Login">Üye Girişi</a> @:|
@@ -38,6 +42,10 @@
                     <a asp-controller="Account" asp-action="Details">Hesabım</a> @:|
                     <a asp-controller="Account" asp-action="Logout">Ayrıl</a>
                 }
+=======
+                <a asp-controller="" asp-action="">Üye Girişi</a> |
+                <a asp-controller="" asp-action="">Üye Ol</a>
+>>>>>>> 5f1563d2e59cb457ac1d671bdb7cab2f1e00d5eb
             </div>
         </div>
     </div>
@@ -96,7 +104,11 @@
                 </div>
             </nav>*@
     </header>
+<<<<<<< HEAD
 
+=======
+    
+>>>>>>> 5f1563d2e59cb457ac1d671bdb7cab2f1e00d5eb
     <div class="container">
         <main role="main" class="pb-3">
             @RenderBody()
@@ -110,11 +122,17 @@
     </footer>
     <script src="~/lib/jquery/dist/jquery.min.js"></script>
     <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+<<<<<<< HEAD
     @*<script src="~/js/site.js" asp-append-version="true"></script>*@
     <script src="~/lib/popper.js/umd/popper.min.js"></script>
     @await RenderSectionAsync("Scripts", required: false)
     <script src="~/lib/font-awesome/js/all.min.js"></script>
     @*<script src="~/js/site.js"></script>*@
     @*<partial name="_ValidationScriptsPartical"/>*@
+=======
+    <script src="~/js/site.js" asp-append-version="true"></script>
+    @await RenderSectionAsync("Scripts", required: false)
+    <script src="~/lib/font-awesome/js/all.min.js"></script>
+>>>>>>> 5f1563d2e59cb457ac1d671bdb7cab2f1e00d5eb
 </body>
 </html>
